@@ -7,7 +7,7 @@
 <section id="contact-section">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 mb-5 mb-md-0">
+      <div class="col-md-0 mb-0 mb-md-0">
         <div class="block">
           {{ with .Site.Data.contact.contactFormTitle }}<h2 class="subtitle wow fadeInDown" data-wow-duration="500ms"
             data-wow-delay=".3s">{{ . }}</h2>{{ end }}
@@ -40,7 +40,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <!--<div class="col-md-6">
         <div class="map-area">
           {{ with .Site.Data.contact.mapTitle }}<h2 class="subtitle  wow fadeInDown" data-wow-duration="500ms"
             data-wow-delay=".3s">{{ . }}</h2>{{ end }}
@@ -81,7 +81,7 @@
             <br>{{ with .Site.Data.contact.phone2 }}{{ . }}{{ end }}</p>
         </div>
       </div>
-    </div>
+    </div>-->
   </div>
 </section>
 {{ "<!-- Contact Section End -->" | safeHTML }}
