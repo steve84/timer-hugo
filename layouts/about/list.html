@@ -2,6 +2,7 @@
 
 {{ partial "page-title.html" . }}
 
+{{ if .Site.Data.about.enable }}
 {{ "<!-- Company Description Section Start -->" | safeHTML }}
 <section class="company-description">
 	<div class="container">
@@ -41,6 +42,7 @@
 	</div>
 </section>
 {{ "<!--  Company Feature Section End -->" | safeHTML }}
+{{ end }}
 
 {{ partial "team.html" . }}
 
